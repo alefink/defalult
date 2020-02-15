@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'default';
+  contador = 1;
+  nombre='';
+  apellido='';
+  title = 'default-Ale';
+  edad = 40;
+  email = 'rpablo@gmail.com';
+  sueldos = [1700, 1600, 1900];
+  
 }
