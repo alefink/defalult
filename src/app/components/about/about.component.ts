@@ -6,18 +6,14 @@ import { ApiService } from '../../api.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  ngOnInit() {
-    this.getapi();
-  }
-
-  result: any = []
-  
-  constructor(private apService: ApiService) { }
-  getapi() {
-    console.log("Por entrar")
-    this.apService.getResutFromRestApi()
-    //console.log(JSON.parse(res));  
+  post;
+  ngOnInit() 
+  {
     
   }
+
+  
+  constructor(private apiService: ApiService) { }
+  
 
 }
