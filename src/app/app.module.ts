@@ -15,6 +15,7 @@ import { MatToolbarModule,
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { WorksComponent } from './components/works/works.component';
+import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
 
 
 
@@ -28,6 +29,7 @@ import { WorksComponent } from './components/works/works.component';
     WorksComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
