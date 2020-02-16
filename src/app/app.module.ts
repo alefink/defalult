@@ -16,6 +16,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { WorksComponent } from './components/works/works.component';
 import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
+import { BlogComponent } from './components/blog/blog.component';
+//import { ApiService } from "./api.service";
 
 
 
@@ -27,6 +29,7 @@ import { HttpClientModule, /* other http imports */ } from "@angular/common/http
     ToolbarComponent,
     SkillsComponent,
     WorksComponent,
+    BlogComponent
   ],
   imports: [
     HttpClientModule,
@@ -40,7 +43,7 @@ import { HttpClientModule, /* other http imports */ } from "@angular/common/http
     MatCardModule,
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
