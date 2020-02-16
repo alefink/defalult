@@ -13,6 +13,9 @@ import { MatToolbarModule,
   MatButtonModule,
   MatProgressSpinnerModule } from '@angular/material';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { WorksComponent } from './components/works/works.component';
+
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    SkillsComponent,
+    WorksComponent,
   ],
   imports: [
     BrowserModule,
