@@ -2,3 +2,8 @@
     height: 75px;
     width:  75px;
 }
+
+.mat-toolbar.mat-primary {
+    background: #007bff;
+    color: #fff;
+  }
