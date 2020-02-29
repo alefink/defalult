@@ -11,7 +11,7 @@ export class AppComponent {
   apellido='';
   title = 'default-Ale';
   edad = 40;
-  email = 'rpablo@gmail.com';
+  email = 'alejandro.finkelberg@gmail.com';
   sueldos = [1700, 1600, 1900];
   
 }
