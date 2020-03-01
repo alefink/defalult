@@ -1,8 +1,7 @@
 <app-toolbar></app-toolbar>
-<p>About!!!!</p>
-<div>
-    <p>nombre: {{ this.post.userId }}</p>
-    <p>postId: {{ this.post.id }}</p>
-    <p>title: {{ this.post.title }}</p>
-    <span>body: <strong>{{ this.post.body }}</strong></span>
+
+
+<div *ngFor="let post of posts">
+    <h3>titulo: {{ post.title }}</h3>
+    <p>body: {{ post.body }}</p>
 </div>

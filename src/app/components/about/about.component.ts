@@ -8,16 +8,17 @@ import { ApiService } from '../../api.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  post;
-  
-  constructor(private apiService: ApiService) { }
+  public posts = [];
+  constructor(
+    private apiService: ApiService
+    ) { }
   
   ngOnInit() 
   {
-    this.apiService.getPost().subscribe((data) =>{
-      console.log(data);
-      this.post = data;
-    })
+    //this.posts = this.apiService.getPosts();
+    //console.log(this.posts);
+    this.apiService.getPosts()
+        .subscribe(data => this.posts = data)
   };
 
 }
