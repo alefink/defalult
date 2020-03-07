@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IPost} from './IPost';
+import { IPost} from './models/IPost';
 // rxjs
 import { Observable } from "rxjs";
 
@@ -17,4 +17,7 @@ export class ApiService {
     return <any>this.http.get(this.URL);
   };
 
+  getArticules(): Observable<IPost[]> {
+    return <any>this.http.get("http://localhost:3000/articulos");
+  }
 }

@@ -1,9 +1,19 @@
 .avatar{
-    height: 75px;
-    width:  75px;
+    height: 55px;
+    width:  55px;
 }
 
+.fill-space {
+    flex: 1 1 auto;
+  }
 .mat-toolbar.mat-primary {
-    background: #007bff;
+    background: #0a015a;
     color: #fff;
   }
+
+  .app-toolbar {
+    position: fixed;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}  

@@ -1,4 +1,27 @@
 <app-toolbar></app-toolbar>
-<p>Skills</p>
-<p style="padding: 15px;"> This is the about page that describes your app</p>
+<p style="top: 25px;">Skills</p>
+<p style="padding: 15px;">This is the skills page that describes your app</p>
 
+<div class="grid-container">
+  <h1>Articulos de skills</h1>
+
+  <mat-grid-list cols="4" gutterSize="1px" rowHeight="400px">
+    <mat-grid-tile *ngFor="let art of posts">
+      <mat-card role="group">
+        <mat-card-header>
+          
+          <mat-card-title>{{ art.title }}</mat-card-title>
+          <mat-card-subtitle>{{ art.abstract }}</mat-card-subtitle>
+        </mat-card-header> 
+        <mat-card-content>
+          <img src="{{ art.img }}" alt="Photo of a Shiba Inu" />
+        </mat-card-content>
+        {{ art.created }} {{ art.author }}
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

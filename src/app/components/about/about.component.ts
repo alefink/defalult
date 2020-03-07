@@ -7,6 +7,7 @@ import { ApiService } from '../../api.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
+
 export class AboutComponent implements OnInit {
   public posts = [];
   constructor(

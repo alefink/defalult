@@ -11,6 +11,7 @@ import { MatToolbarModule,
   MatIconModule,
   MatCardModule,
   MatButtonModule,
+  MatGridListModule,
   MatProgressSpinnerModule } from '@angular/material';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SkillsComponent } from './components/skills/skills.component';
@@ -41,6 +42,7 @@ import { BlogComponent } from './components/blog/blog.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
     MatProgressSpinnerModule
   ],
   providers: [ ],
